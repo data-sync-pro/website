@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/index.css">
+    
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    
+    
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body onLoad="checkCookie()">
+    <header>
+        <div class="pageheader d-flex flex-column flex-md-row align-items-center mb-3 bg-white border-bottom shadow-sm header  fixed-top">
+            <h5 class="my-0 mr-md-auto font-weight-normal"><img src="img/logo.png" alt="logo" class="logo"></h5>
+            <nav class="my-2 my-md-0 mr-md-3">
+                <a class="p-2 text-dark" href="https://data-sync-pro.github.io/user-manual/post_installation.html" target="_blank">Developer Guide</a>
+                <a class="p-2 text-dark" href="qa.html">Q&A</a>
+                <!--
+                <a class="p-2 text-dark" href="#">Pricing</a>-->
+            </nav>
+        </div>
+    </header>
+
+    <div class="home">
+        <div class="tips">
+            <div class="alert alert-dark alert-dismissible fade show" role="alert">
+                We use cookies to personalize content and ads, to provide social media features and to analyze our traffic. 
+                Some of these cookies also help imporve user exerience on our websites, assist with navigation and your ability to provide feedback,
+                and assist with our promotional and marketing efforts. 
+
+                
+                <a type="button" class="close" data-dismiss="alert" aria-label="Close" onclick="setCook()">
+                    Agree
+                </a>
+            </div>
+            
+        </div>
+        <div  class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner hasbg">
+                <div class="carousel-item carousel-item-next carousel-item-left">
+                    <img src="../img/1200.jpg" class="top-img max" width="100%" height="100%" alt=""> 
+                    <img src="../img/900.jpg" class="top-img middle" width="100%" height="100%" alt="">
+                    <div class="carousel-caption text-left">
+                        <div class="bannerLogo-content">
+                            <img src="../img/Banner-Logo.png" class="bannerlogo" alt="Banner-Logo">
+                            <img src="../img/Banner-salesforce.png" class="logo2" alt="Banner-salesforce">
+                        </div>
+                        
+                        <h1>The Simplicity You Need for Manipulating Salesforce data.</h1>
+                        <p>A native Salesforce app that makes your migration of data secure and simple.
+                            Maintaining object relationships, data transformation, sequential execution,
+                            debugging of issues, scrambling data, and reuse of templates can never be easier.
+                        </p>
+                        <!-- <p><a class="btn btn-lg btn-info" href="#" role="button">learn more</a></p> -->
+                        <img src="../img/Banner-salesforce.png" class="bannersalesforce" alt="Banner-salesforce">
+                       
+                    </div>
+                    <!-- <img src="../img/Banner-salesforce.png" class="bannersalesforce" alt="Banner-salesforce"> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid marketing bg">
+            <div class="page-box1">
+                <h1>Meet Your Needs Around Salesforce Data</h1>
+            </div>
+
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-bs-pause="false">
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="ct-new-columns">
+                        <div class="left">
+                            <h2>Merge Orgs Data</h2>
+                            <p class="lead">Fully featured data transformation and run-in-batch capabilities allow
+                                moving data from any org to any org, any object to any object, and any field to any
+                                field.</p>
+                        </div>
+                        <div class="right">
+                            <img src="../img/data_migration.png" alt="First slide">
+                        </div>
+                       
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="ct-new-columns">
+                        <div class="left ">
+                            <h2>Deploy Configurations</h2>
+                            <p class="lead">Extremely simple process makes it painless to build reusable mapping
+                                templates and deploy configurational data from one org to others as part of your
+                                DevOps/Release process.</p>
+                        </div>
+                        <div class="right">
+                            <img  src="../img/configuration_deployment.png" alt="Second slide">
+                        </div>
+                    </div>
+
+                  </div>
+                  <div class="carousel-item">
+                    <div class="ct-new-columns">
+                        <div class="left">
+                            <h2>Seed Sandboxes</h2>
+                                <p class="lead">Build or select your testing data once, migrate effortlessly to
+                                    sandboxes as many times as needed, with sensitive information securely scrambled.
+                                </p>
+                        </div>
+                        <div class="right">
+                            <img  src="../img/sandbox_seeding.png" alt="Third slide">
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            
+
+
+          
+            <!-- <div class="row featurette">
+                <div class="col-md-6">
+                <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
+                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                </div>
+                <div class="col-md-6">
+                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+                </div>
+            </div> -->
+        </div>
+        <div class="page-center">
+            <div class="page-box3">
+                <ul>
+                    <li>
+                        <div>
+                            <p>
+                                <img src="../img/feature_1.png" alt="">
+                            </p>
+                            <span>
+                                <p>Secure Execution</p>
+                                <font>DSP runs strictly in your Salesforce org and connects only with orgs authorized by
+                                    you – data is never shared with any other parties.</font>
+                                <!--<a>LEARN MORE</a>-->
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>
+                                <img src="../img/feature_2.png" alt="">
+                            </p>
+                            <span>
+                                <p>Powerful Transformation</p>
+                                <font>Support fully featured data transformations such as arithmetic, text & logical
+                                    operations, predefined functions, and custom APEX classes.</font>
+                                <!--<a>LEARN MORE</a>-->
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>
+                                <img src="../img/feature_3.png" alt="">
+                            </p>
+                            <span>
+                                <p>Easy Relationships</p>
+                                <font>With only a few clicks, you can build reusable mappings, with relationships and
+                                    proper execution order determined automatically. It’s just like magic!</font>
+                                <!--<a>LEARN MORE</a>-->
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>
+                                <img src="../img/feature_4.png" alt="">
+                            </p>
+                            <span>
+                                <p>Execute in Sequence</p>
+                                <font>A predetermined execution order will ensure that necessary data is migrated first,
+                                    before migrating dependent records.</font>
+                                <!--<a>LEARN MORE</a>-->
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>
+                                <img src="../img/feature_7.png" alt="">
+                            </p>
+                            <span>
+                                <p>Reusable Templates</p>
+                                <font>Once defined, your templates can be re-used for future jobs. Clone existing
+                                    mappings to quickly replicate settings and get a jumpstart on configuring your next
+                                    job!</font>
+                                <!--<a>LEARN MORE</a>-->
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>
+                                <img src="../img/feature_8.png" alt="">
+                            </p>
+                            <span>
+                                <p>ReExecutable Executions</p>
+                                <font>Granular re-execution capabilities – by batch or by execution. This could save
+                                    hours of time and significantly reduce complexity while migrating large volumes
+                                    data.</font>
+                                <!--<a>LEARN MORE</a>-->
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>
+                                <img src="../img/feature_9.png" alt="">
+                            </p>
+                            <span>
+                                <p>Action on Demand</p>
+                                <font>Choose the specific type of action, whether it be an Insert, Update or Upsert, to
+                                    suit your needs.</font>
+                                <!--<a>LEARN MORE</a>-->
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>
+                                <img src="../img/feature_10.png" alt="">
+                            </p>
+                            <span>
+                                <p>Data Scrambling</p>
+                                <font>Protect your sensitive data by using the prebuilt Randomize() and Scramble()
+                                    functions to scramble Text, Number, and Date fields of data in your sandboxes.
+                                </font>
+                                <!--<a>LEARN MORE</a>-->
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="page-foot">
+            <div class="top row">
+                <div class="left col-12 col-md-8">
+                  <div>
+                      <h5>Get the latest Pushtopic updates</h3>
+                      <form class="contact" style="width: 70%;">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="email" aria-label="email" aria-describedby="button-addon2">
+                            <div class="input-group-append">
+                              <button class="btn btn-outline-secondary" type="button" id="button-addon2">submit</button>
+                            </div>
+                          </div>
+                    </form>
+                  </div>
+                </div>
+                <div class=" right col-12 col-md-4">
+                  <h5>Connect with us</h3>
+                  <a class="social" href="https://www.linkedin.com/" target="_blank">
+                      <svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+                          <title>LinkedIn-outline</title>
+                          <desc>Created with Sketch.</desc>
+                          <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <g id="Artboard" transform="translate(-41.000000, -227.000000)">
+                                  <g id="LinkedIn-outline" transform="translate(42.000000, 228.000000)">
+                                      <circle id="Oval-Copy-9" stroke="#000000" cx="20" cy="20" r="20"></circle>
+                                      <path d="M11.4540216,16.7718018 L14.9623706,16.7718018 L14.9623706,28.9988475 L11.4540216,28.9988475 L11.4540216,16.7718018 Z M13.1187676,15.2424126 L13.0933678,15.2424126 C11.8233772,15.2424126 11,14.3077219 11,13.1240876 C11,11.9162505 11.8477187,11 13.1431091,11 C14.4374412,11 15.233302,11.9139454 15.2587018,13.12063 C15.2587018,14.3042643 14.4374412,15.2424126 13.1187676,15.2424126 L13.1187676,15.2424126 Z M29,29 L25.0217545,29 L25.0217545,22.6715328 C25.0217545,21.0153669 24.3994591,19.8859009 23.0310442,19.8859009 C21.9843603,19.8859009 21.4022813,20.6477142 21.13135,21.3841721 C21.0297507,21.6469458 21.0456256,22.0145985 21.0456256,22.3834038 L21.0456256,29 L17.1044214,29 C17.1044214,29 17.1552211,17.7906262 17.1044214,16.7718018 L21.0456256,16.7718018 L21.0456256,18.6907415 C21.2784572,17.8517096 22.5378645,16.6542451 24.5476246,16.6542451 C27.0410395,16.6542451 29,18.4141375 29,22.2001537 L29,29 L29,29 Z" id="Shape" fill="#000000"></path>
+                                  </g>
+                              </g>
+                          </g>
+                      </svg>            
+                  </a>
+                  <a class="social" href="https://twitter.com/" target="_blank">
+                      <svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+                          <title>twitter-outline</title>
+                          <desc>Created with Sketch.</desc>
+                          <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <g id="Artboard" transform="translate(-41.000000, -169.000000)">
+                                  <g id="twitter-outline" transform="translate(42.000000, 170.000000)">
+                                      <circle id="Oval-Copy-7" stroke="#000000" cx="20" cy="20" r="20"></circle>
+                                      <path d="M26.8795563,14.5109397 C27.6423666,14.0154047 28.2276809,13.2296607 28.5023772,12.2936503 C27.7881669,12.753626 26.9989435,13.0862768 26.1568938,13.266367 C25.4849445,12.4863583 24.5245642,12 23.461701,12 C21.4226096,12 19.770206,13.795167 19.770206,16.0090151 C19.770206,16.3233127 19.8008452,16.6295809 19.8642367,16.9220841 C16.7960909,16.7546117 14.0755415,15.1601822 12.2530375,12.7329787 C11.9350238,13.3271618 11.7533016,14.0154047 11.7533016,14.7495306 C11.7533016,16.1397813 12.405177,17.3671479 13.3961965,18.0875088 C12.7908082,18.0668615 12.2213418,17.8844771 11.7226624,17.5862385 L11.7226624,17.6355626 C11.7226624,19.5787019 12.9947174,21.199514 14.6862124,21.5665769 C14.3755943,21.6606368 14.0501849,21.7076667 13.7120972,21.7076667 C13.4743793,21.7076667 13.241944,21.6835782 13.0179609,21.6365482 C13.4870576,23.2286836 14.8510301,24.38952 16.4675119,24.4204909 C15.2028526,25.4964441 13.6106709,26.13651 11.881141,26.13651 C11.5832013,26.13651 11.2884311,26.1193039 11,26.0814506 C12.6344427,27.2181985 14.5752773,27.8823529 16.6608558,27.8823529 C23.4543053,27.8823529 27.1669308,21.7730498 27.1669308,16.4747262 C27.1669308,16.3003713 27.1648177,16.1271635 27.1574221,15.9562498 C27.879028,15.3907436 28.5066033,14.6841475 29,13.8800503 C28.3375594,14.1989362 27.6254622,14.4145857 26.8795563,14.5109397 Z" id="Shape" fill="#000000"></path>
+                                  </g>
+                              </g>
+                          </g>
+                      </svg>            
+                  </a>
+                  <a class="social" href="https://www.youtube.com/" target="_blank">
+                      <svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+                          <title>youtube-outline</title>
+                          <desc>Created with Sketch.</desc>
+                          <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <g id="Artboard" transform="translate(-41.000000, -107.000000)">
+                                  <g id="youtube-outline" transform="translate(42.000000, 108.000000)">
+                                      <circle id="Oval-Copy-5" stroke="#000000" cx="20" cy="20" r="20"></circle>
+                                      <path d="M29,23.8095956 L29,17.1904044 C29,17.1904044 29,14 25.898048,14 L14.1008937,14 C14.1008937,14 11,14 11,17.1904044 L11,23.8095956 C11,23.8095956 11,27 14.1008937,27 L25.898048,27 C25.898048,27 29,27 29,23.8095956 M23.6,20.5005678 L17.3,24.2142857 L17.3,16.7857143 L23.6,20.5005678" id="Shape" fill="#000000"></path>
+                                  </g>
+                              </g>
+                          </g>
+                      </svg>
+                  </a>
+                  <a class="social" href="https://www.facebook.com" target="_blank">
+                      <svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+                          <title>facebook-outline</title>
+                          <desc>Created with Sketch.</desc>
+                          <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <g id="Artboard" transform="translate(-41.000000, -51.000000)">
+                                  <g id="facebook-outline" transform="translate(42.000000, 52.000000)">
+                                      <circle id="Oval-Copy-4" stroke="#000000" cx="20" cy="20" r="20"></circle>
+                                      <path d="M24.4724704,17.3000366 L21.2999803,17.3000366 L21.2999803,15.5000422 C21.2999803,14.5712451 21.3755801,13.9862469 22.7066759,13.9862469 L24.3878707,13.9862469 L24.3878707,11.1242559 C23.5697732,11.0396561 22.7471758,10.9982563 21.9236784,11 C19.481986,11 17.6999916,12.4913516 17.6999916,15.229143 L17.6999916,17.3000366 L15,17.3000366 L15,20.9000253 L17.6999916,20.8991253 L17.6999916,29 L21.2999803,29 L21.2999803,20.8973253 L24.0593717,20.8964253 L24.4724704,17.3000366 Z" id="Path" fill="#000000" fill-rule="nonzero"></path>
+                                  </g>
+                              </g>
+                          </g>
+                      </svg>
+                  </a>
+                  <a class="social" href="https://www.instagram.com/" target="_blank">
+                      <svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+                          <title>Instagram-outline</title>
+                          <desc>Created with Sketch.</desc>
+                          <defs>
+                              <polygon id="path-1" points="0 0.00567857143 17.9943214 0.00567857143 17.9943214 17.9978571 0 17.9978571"></polygon>
+                          </defs>
+                          <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <g id="Artboard" transform="translate(-41.000000, -288.000000)">
+                                  <g id="Instagram-outline" transform="translate(42.000000, 289.000000)">
+                                      <circle id="Oval-Copy-11" stroke="#000000" cx="20" cy="20" r="20"></circle>
+                                      <g id="Group" transform="translate(11.000000, 11.000000)">
+                                          <g id="Group-3">
+                                              <mask id="mask-2" fill="white">
+                                                  <use xlink:href="#path-1"></use>
+                                              </mask>
+                                              <g id="Clip-2"></g>
+                                              <path d="M9.00001786,0 C6.55574675,0 6.24925721,0.0103571429 5.28931151,0.0541428571 C4.33136644,0.0978214286 3.67712433,0.249928571 3.10465802,0.472357143 C2.51282845,0.70225 2.01092011,1.00989286 1.51054797,1.51007143 C1.01021155,2.01028571 0.702471613,2.51203571 0.472506207,3.10367857 C0.250007443,3.67596429 0.0978522986,4.33 0.0541599433,5.28764286 C0.0103604113,6.24728571 0,6.55367857 0,8.99717857 C0,11.4406429 0.0103604113,11.7470357 0.0541599433,12.7066786 C0.0978522986,13.6643214 0.250007443,14.3183571 0.472506207,14.8906429 C0.702471613,15.4822857 1.01021155,15.9840357 1.51054797,16.48425 C2.01092011,16.9844286 2.51282845,17.2920714 3.10465802,17.522 C3.67712433,17.7443929 4.33136644,17.8965 5.28931151,17.9401786 C6.24925721,17.9839643 6.55574675,17.9943214 9.00001786,17.9943214 C11.4442532,17.9943214 11.7507428,17.9839643 12.7106885,17.9401786 C13.6686336,17.8965 14.3228757,17.7443929 14.895342,17.522 C15.4871715,17.2920714 15.9890799,16.9844286 16.489452,16.48425 C16.9897884,15.9840357 17.2975284,15.4822857 17.5275295,14.8906429 C17.7499926,14.3183571 17.9021477,13.6643214 17.9458401,12.7066786 C17.9896396,11.7470357 18,11.4406429 18,8.99717857 C18,6.55367857 17.9896396,6.24728571 17.9458401,5.28764286 C17.9021477,4.33 17.7499926,3.67596429 17.5275295,3.10367857 C17.2975284,2.51203571 16.9897884,2.01028571 16.489452,1.51007143 C15.9890799,1.00989286 15.4871715,0.70225 14.895342,0.472357143 C14.3228757,0.249928571 13.6686336,0.0978214286 12.7106885,0.0541428571 C11.7507428,0.0103571429 11.4442532,0 9.00001786,0 Z M9.00001786,1.62110714 C11.4030974,1.62110714 11.6877586,1.63028571 12.6367723,1.67357143 C13.5142634,1.71357143 13.9908066,1.86014286 14.3079424,1.98335714 C14.7280392,2.14657143 15.0278481,2.34153571 15.3427688,2.65639286 C15.6577254,2.97121429 15.8527512,3.27092857 16.016017,3.69089286 C16.1392701,4.00792857 16.2858878,4.48432143 16.3259004,5.36153571 C16.3691998,6.31025 16.3783813,6.59482143 16.3783813,8.99717857 C16.3783813,11.3995 16.3691998,11.6840714 16.3259004,12.6327857 C16.2858878,13.51 16.1392701,13.9863929 16.016017,14.3034286 C15.8527512,14.7233929 15.6577254,15.0231071 15.3427688,15.3379286 C15.0278481,15.6527857 14.7280392,15.84775 14.3079424,16.0109643 C13.9908066,16.1341786 13.5142634,16.28075 12.6367723,16.32075 C11.6879015,16.3640357 11.403276,16.3732143 9.00001786,16.3732143 C6.59672397,16.3732143 6.31213419,16.3640357 5.36322768,16.32075 C4.48573657,16.28075 4.00919338,16.1341786 3.69205761,16.0109643 C3.2719608,15.84775 2.97215193,15.6527857 2.65723115,15.3379286 C2.34231037,15.0231071 2.14724883,14.7233929 1.98398304,14.3034286 C1.86072987,13.9863929 1.71411219,13.51 1.67409957,12.6327857 C1.63080019,11.6840714 1.62161872,11.3995 1.62161872,8.99717857 C1.62161872,6.59482143 1.63080019,6.31025 1.67409957,5.36153571 C1.71411219,4.48432143 1.86072987,4.00792857 1.98398304,3.69089286 C2.14724883,3.27092857 2.34227465,2.97121429 2.65723115,2.65639286 C2.97215193,2.34153571 3.2719608,2.14657143 3.69205761,1.98335714 C4.00919338,1.86014286 4.48573657,1.71357143 5.36322768,1.67357143 C6.31224136,1.63028571 6.59690259,1.62110714 9.00001786,1.62110714 L9.00001786,1.62110714 Z" id="Fill-1" fill="#0A0B09" mask="url(#mask-2)"></path>
+                                          </g>
+                                          <path d="M8.99717857,12.0018929 C7.34082143,12.0018929 5.99810714,10.6591786 5.99810714,9.00285714 C5.99810714,7.3465 7.34082143,6.00378571 8.99717857,6.00378571 C10.6535,6.00378571 11.9962143,7.3465 11.9962143,9.00285714 C11.9962143,10.6591786 10.6535,12.0018929 8.99717857,12.0018929 Z M8.99717857,4.38267857 C6.4455,4.38267857 4.377,6.45117857 4.377,9.00285714 C4.377,11.5545 6.4455,13.623 8.99717857,13.623 C11.5488214,13.623 13.6173214,11.5545 13.6173214,9.00285714 C13.6173214,6.45117857 11.5488214,4.38267857 8.99717857,4.38267857 L8.99717857,4.38267857 Z" id="Fill-4" fill="#0A0B09"></path>
+                                          <path d="M14.8795357,4.20014286 C14.8795357,4.79642857 14.3961429,5.27978571 13.7998571,5.27978571 C13.2036071,5.27978571 12.7202143,4.79642857 12.7202143,4.20014286 C12.7202143,3.60385714 13.2036071,3.12046429 13.7998571,3.12046429 C14.3961429,3.12046429 14.8795357,3.60385714 14.8795357,4.20014286" id="Fill-5" fill="#0A0B09"></path>
+                                      </g>
+                                  </g>
+                              </g>
+                          </g>
+                      </svg>
+                  </a>
+                </div>
+            </div>
+            <div class="bottom row">
+                <!-- <h3 class="col-12"> <img src="../img/Banner-salesforce.png" class="bannersalesforce" alt="Banner-salesforce"><span>Works for you™</span></h3> -->
+                <ul class="col-12">
+                    <li><a href="msa.pdf">Master Subscription Agreement</a></li>
+                    <!--
+                    <li><a href="">Cookie policy</a></li>-->
+                </ul>
+            </div>
+        </div>
+       
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Tips</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        check
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                            onclick="showTips()">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="setCook()">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <a class="btn btn-lg btn-info ContactBtn2" href="#" role="button">Contact</a> -->
+        <!-- <button class="ContactBtn" data-test-id="messenger-button"><svg width="20" height="20" viewBox="0 0 18 18"><path d="M16.875 4.5H15.75v6.75a1.125 1.125 0 01-1.125 1.125H7.682l-2.057 2.25h5.625L14.625 18v-3.375h2.25A1.125 1.125 0 0018 13.5V5.625A1.125 1.125 0 0016.875 4.5z"></path><path d="M1.125 0h11.25A1.125 1.125 0 0113.5 1.125V9a1.125 1.125 0 01-1.125 1.125H6.75L3.375 13.5v-3.375h-2.25A1.125 1.125 0 010 9V1.125A1.125 1.125 0 011.125 0z"></path></svg></button> -->
+    </div>
+    <script>
+       var myCarousel = document.getElementById('myCarousel')
+       var carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 6000,
+        pause: false,
+        })
+        function getCookie(c_name) {
+            if (document.cookie.length > 0) {
+                c_start = document.cookie.indexOf(c_name + "=");
+                if (c_start != -1) {
+                    c_start = c_start + c_name.length + 1;
+                    c_end = document.cookie.indexOf(";", c_start)
+                    if (c_end == -1) {
+                        c_end = document.cookie.length;
+                    }
+                    return unescape(document.cookie.substring(c_start, c_end));
+                }
+            }
+            return "";
+        }
+
+        function setCookie(c_name, value, expiredays) {
+            var exdate = new Date();
+            exdate.setDate(exdate.getDate() + expiredays);
+            document.cookie = c_name + "=" + escape(value) + ((expiredays == null) ? "" : ";expires=" + exdate
+                .toGMTString())
+        }
+
+        function checkCookie() {
+
+            isDownApk = getCookie('isDownApk')
+            if (isDownApk != null && isDownApk != "") {
+                console.log("同意了")
+                $(".alert").alert('close')
+            } else {
+                //$('#exampleModal').modal('show');
+                // if (confirm("cheack!")) {
+                //     setCookie('isDownApk',"1",999999);
+                // } else {
+                //     txt = "您按了取消";
+
+                // }
+            }
+         
+        }
+
+        function setCook() {
+            setCookie('isDownApk', "1", 999999);
+            $('#exampleModal').modal('hide');
+            $(".alert").alert('close')
+        }
+
+        function showTips() {
+            $(".alert").alert()
+        }
+    </script>
+</body>
+</html>
