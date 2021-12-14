@@ -27,7 +27,6 @@
             <h5 class="my-0 mr-md-auto font-weight-normal"><img src="img/logo.png" alt="logo" class="logo"></h5>
             <nav class="my-2 my-md-0 mr-md-3">
                 <a class="p-2 text-dark" target="_blank" href="https://data-sync-pro.github.io/user-manual/post_installation.html">Developer Guide</a>
-                <a class="p-2 text-dark" href="qa.html">Q&A</a>
                 <a class="p-2 text-dark" target="_blank" href="https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3u00000MSLUzEAP">Data Sync Pro@AppExchange</a>
             </nav>
         </div>
@@ -35,21 +34,17 @@
 
     <div class="home">
 
-        <!--
+        
         <div class="tips">
             <div class="alert alert-dark alert-dismissible fade show" role="alert">
-                We use cookies to personalize content and ads, to provide social media features and to analyze our traffic. 
-                Some of these cookies also help imporve user exerience on our websites, assist with navigation and your ability to provide feedback,
-                and assist with our promotional and marketing efforts. 
-
-                
-                <a type="button" class="close" data-dismiss="alert" aria-label="Close" onclick="setCook()">
-                    Agree
-                </a>
+                <span> We use cookies to personalize content and ads, to provide social media features and to analyze our traffic. 
+                    Some of these cookies also help imporve user exerience on our websites, assist with navigation and your ability to provide feedback,
+                    and assist with our promotional and marketing efforts. </span>
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="alert" aria-label="Close" onclick="setCook()">Accep and Proceed</button>
             </div>
             
         </div>
-        -->
+       
         <div  class="carousel slide" data-ride="carousel">
             <div class="carousel-inner hasbg">
                 <div class="carousel-item carousel-item-next carousel-item-left">
@@ -430,16 +425,8 @@
 
             isDownApk = getCookie('isDownApk')
             if (isDownApk != null && isDownApk != "") {
-                console.log("同意了")
                 $(".alert").alert('close')
             } else {
-                //$('#exampleModal').modal('show');
-                // if (confirm("cheack!")) {
-                //     setCookie('isDownApk',"1",999999);
-                // } else {
-                //     txt = "您按了取消";
-
-                // }
             }
          
         }

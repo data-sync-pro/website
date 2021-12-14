@@ -61,7 +61,15 @@ abbr, acronym, img {
   z-index: 99; }
   .home .tips .alert {
     width: 100%;
-    margin: 0; }
+    margin: 0;
+    padding: 0.75rem 1.25rem !important;
+    display: flex;
+    text-align: left;
+    align-items: center; }
+  .home .tips button {
+    word-break: keep-all;
+    white-space: nowrap;
+    height: 2.5rem; }
 .home .hasbg {
   background-color: #7fb9ba;
   /* Since positioning the image, we need to help out the caption */
@@ -436,11 +444,6 @@ abbr, acronym, img {
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
-body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  color: #5a5a5a; }
-
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 /* MARKETING CONTENT
@@ -563,7 +566,16 @@ body {
     padding-bottom: 0.5rem; }
 
   .logo2 {
-    display: inline-block !important; } }
+    display: inline-block !important; }
+
+  .alert {
+    flex-wrap: wrap;
+    justify-content: center; }
+    .alert span {
+      flex: 0 0 100%;
+      text-align: center; }
+    .alert button {
+      margin-top: 0.5rem !important; } }
 /* iphone6 7 8 plus */
 @media screen and (max-width: 600px) {
   .page-box3 ul li {

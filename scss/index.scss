@@ -32,9 +32,19 @@
         justify-content: center;
         align-items: center;
         z-index: 99;
+      
         .alert{
             width: 100%;
             margin:0;
+            padding: 0.75rem 1.25rem !important;
+            display: flex;
+            text-align: left;
+            align-items: center;
+        }
+        button{
+            word-break: keep-all;
+            white-space: nowrap;
+            height: 2.5rem;
         }
     }
     .hasbg{
@@ -512,11 +522,6 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
-body {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    color: #5a5a5a;
-  }
   
   
   /* CUSTOMIZE THE CAROUSEL
@@ -675,6 +680,17 @@ body {
     .logo2{
         display: inline-block !important;
         
+    }
+    .alert{
+        flex-wrap: wrap;
+        justify-content: center;
+        span {
+            flex:  0 0 100%;
+            text-align: center;
+        }
+        button {
+            margin-top: 0.5rem !important;
+        }
     }
 
 }
