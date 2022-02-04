@@ -179,7 +179,7 @@ abbr, acronym, img {
 .home .page-box1 {
   padding: 4rem 0;
   display: flex;
-  border-top: 1px solid #e1e1e1;
+  border-top: 0px solid #e1e1e1;
   border-bottom: 1px solid #e1e1e1;
   margin-bottom: 4rem; }
   .home .page-box1 h3 {
@@ -302,12 +302,12 @@ abbr, acronym, img {
         display: block; }
 
 .page-box3 ul {
-  margin-top: 8rem;
+  margin-top: 2rem;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   border-radius: 1rem;
-  padding: 3rem;
+  padding: 0rem;
   background-color: #fbfafb;
   position: relative; }
   .page-box3 ul::before {
@@ -318,7 +318,7 @@ abbr, acronym, img {
     display: block;
     width: 100%;
     height: 1px;
-    border-top: 1px solid #e1e1e1; }
+    border-top: 0px solid #e1e1e1; }
   .page-box3 ul li {
     width: 25%;
     padding: 1.5rem;
@@ -571,6 +571,14 @@ abbr, acronym, img {
     display: inline-block !important; 
     margin-top: 2.5rem;
     padding-top: 0rem;
+  }
+
+  .page-box1 h1{
+    font-size: 2rem;
+  }
+
+  .page-center h1{
+    font-size: 2rem;
   }
 
   .alert {
