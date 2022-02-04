@@ -86,12 +86,12 @@ abbr, acronym, img {
     .home .hasbg .carousel-caption .bannerlogo {
       height: 4.5rem;
       width: 4.5rem;
-      margin-bottom: 2.5rem; }
+      margin-top: 2rem; }
     .home .hasbg .carousel-caption h1 {
       font-size: 3rem;
       padding-bottom: 2rem; }
     .home .hasbg .carousel-caption p {
-      padding-bottom: 2rem;
+      padding-bottom: 4rem;
       font-size: 1.5rem; }
   .home .hasbg .bannersalesforce {
     width: 10rem; }
