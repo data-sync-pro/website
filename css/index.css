@@ -49,7 +49,7 @@ abbr, acronym, img {
 .bannerLogo-content img {
   display: inline-block; }
   .bannerLogo-content img.logo2 {
-    /*display: none;*/ }
+    display: none; }
 
 .home .tips {
   position: fixed;
