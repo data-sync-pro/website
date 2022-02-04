@@ -84,11 +84,12 @@ abbr, acronym, img {
     justify-content: center;
     margin-top: 0rem; }
     .home .hasbg .carousel-caption .bannerlogo {
-      height: 4.5rem;
-      width: 4.5rem;
-      margin-top: 4.5rem; }
+      height: 4.25rem;
+      width: 4.25rem;
+      margin-top: 2.5rem; }
     .home .hasbg .carousel-caption h1 {
-      font-size: 3rem;
+      font-size: 2.8rem;
+      margin-top: 2rem;
       padding-bottom: 2rem; }
     .home .hasbg .carousel-caption p {
       padding-bottom: 4rem;
@@ -545,6 +546,7 @@ abbr, acronym, img {
 
   .home .hasbg .carousel-caption h1 {
     padding-bottom: 1rem !important;
+    margin-top: 0.5rem;
     font-size: 2.5rem; }
 
   .home .hasbg .carousel-caption p {
@@ -564,9 +566,12 @@ abbr, acronym, img {
 
   .bannerLogo-content {
     padding-bottom: 0.5rem; }
-
+  
   .logo2 {
-    display: inline-block !important; }
+    display: inline-block !important; 
+    margin-top: 2.5rem;
+    padding-top: 0rem;
+  }
 
   .alert {
     flex-wrap: wrap;
