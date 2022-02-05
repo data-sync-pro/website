@@ -86,7 +86,7 @@ abbr, acronym, img {
     .home .hasbg .carousel-caption .bannerlogo {
       height: 4.25rem;
       width: 4.25rem;
-      margin-top: 2.5rem; }
+      margin-top: 3rem; }
     .home .hasbg .carousel-caption h1 {
       font-size: 2.8rem;
       margin-top: 2rem;
@@ -569,7 +569,7 @@ abbr, acronym, img {
   
   .logo2 {
     display: inline-block !important; 
-    margin-top: 2.5rem;
+    margin-top: 3rem;
     padding-top: 0rem;
   }
 
