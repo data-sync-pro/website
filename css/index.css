@@ -581,6 +581,14 @@ abbr, acronym, img {
     font-size: 2rem;
   }
 
+  .banner-logo-top{
+    display: flex !important;
+  }
+
+  .banner-logo-bottom{
+    display: none !important;
+  }
+
   .alert {
     flex-wrap: wrap;
     justify-content: center; }
