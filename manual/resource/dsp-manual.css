@@ -384,3 +384,17 @@ td b{
 #nav{
     margin-bottom: 3rem;
 }
+
+.absolute-position {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.responsive-video {
+    max-width: 150%;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
