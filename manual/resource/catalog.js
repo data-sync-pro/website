@@ -43,7 +43,8 @@ var catalog = JSON.parse(
                 "Inline Editing",
                 "Mass Editing",
                 "Dynamic Query",
-                "Data Mash-ups"
+                "Data Mash-ups",
+                "Actionable Data List"
             ],
             "Batch Jobs": [
                 "Close Stagnant Cases",
