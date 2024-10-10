@@ -46,7 +46,8 @@ var catalog = JSON.parse(
                 "Data Mash-ups"
             ],
             "Data List":[
-            "Actionable Data List"
+                "Actionable Data List",
+                "Pipeline Data List"
             ],
             "Batch Jobs": [
                 "Close Stagnant Cases",
