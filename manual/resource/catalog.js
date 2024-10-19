@@ -261,7 +261,7 @@ window.onload = function () {
             min-width: 320px; 
             height: 100%;
             overflow-y: auto;
-            padding-bottom: 2rem;
+            padding-bottom: 3rem;
         }
         .content-container {
             flex-grow: 1;
