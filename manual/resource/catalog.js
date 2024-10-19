@@ -266,7 +266,9 @@ window.onload = function () {
         .content-container {
             flex-grow: 1;
             overflow-y: auto;
-            padding: 1rem;
+            padding-top: 1rem;
+            padding-right: 1rem;
+            padding-bottom: 1rem;
         }
     `;
     document.head.appendChild(styleElement);
