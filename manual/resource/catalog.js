@@ -84,7 +84,7 @@ var catalog = JSON.parse(
   }
 ],*/
 
-function getNavigationHtml(){
+function getNavigationHtml() {
 
     return `
     <nav class="slds-nav-vertical" aria-label="Sub page">
@@ -127,16 +127,16 @@ function getSectionHtml() {
 
         for (let i in subSections) {
 
-            if(typeof subSections[i] == 'object'){
+            if (typeof subSections[i] == 'object') {
 
                 let keys = Object.keys(subSections[i]);
 
-                for(let j in keys){
+                for (let j in keys) {
 
                     let fileNameSubSection = getHtmlFileNameSubSection(section, keys[j]);
 
                     let activeClassNameSubSection = currentFileName() == fileNameSubSection ? 'slds-is-active' : 'slds-is-inactive';
-        
+
                     ret += `<li class="">
                         <div class="slds-nav-vertical__item ${activeClassNameSubSection}" style="font-size:15px;">
                         <a href="${fileNameSubSection}.html" class="slds-nav-vertical__action " >${keys[j]}</a></div>
@@ -144,18 +144,18 @@ function getSectionHtml() {
 
                     let grandChildren = subSections[i][keys[j]];
 
-                    if(grandChildren.length > 0){
+                    if (grandChildren.length > 0) {
 
                         ret += '<ul aria-describedby="entity-header">';
 
-                        for(let k in grandChildren){
+                        for (let k in grandChildren) {
 
                             //console.log('grandChildren[k]: ' + grandChildren[k]);
-    
+
                             let fileNameGrandSection = getHtmlFileNameSubSection(section, grandChildren[k]);
-    
+
                             let activeClassNameSubSection = currentFileName() == fileNameGrandSection ? 'slds-is-active' : 'slds-is-inactive';
-                
+
                             ret += `<li class="slds-nav-vertical__item ${activeClassNameSubSection}">
                                 <a href="${fileNameGrandSection}.html" class="slds-nav-vertical__action" >${grandChildren[k]}</a>
                                 </li>`;
@@ -167,12 +167,12 @@ function getSectionHtml() {
                     ret += '</li>';
                 }
             }
-            else{
+            else {
 
                 let fileNameSubSection = getHtmlFileNameSubSection(section, subSections[i]);
 
                 let activeClassNameSubSection = currentFileName() == fileNameSubSection ? 'slds-is-active' : 'slds-is-inactive';
-    
+
                 ret += `<li class="slds-nav-vertical__item ${activeClassNameSubSection}">
                     <a href="${fileNameSubSection}.html" class="slds-nav-vertical__action" >${subSections[i]}</a>
                     </li>`;
@@ -185,10 +185,10 @@ function getSectionHtml() {
     return ret;
 }
 
-function currentFileName(){
+function currentFileName() {
 
-    let path = window. location. pathname;
-    let page = path. split("/"). pop();
+    let path = window.location.pathname;
+    let page = path.split("/").pop();
 
     let ret = page.substr(0, page.indexOf("."));
 
@@ -205,8 +205,8 @@ function getSectionHtml2() {
         ret += '<div class="slds-nav-vertical__section">'
             + '<a href="' + getHtmlFileName(section) + '">'
             + '<h2 id="entity-header" class="slds-nav-vertical__title">'
-            + section 
-            + '</h2></a>' 
+            + section
+            + '</h2></a>'
             + '<ul aria-describedby="entity-header">';
 
         let subSections = catalog[section];
@@ -228,12 +228,12 @@ function getSectionHtml2() {
     return ret;
 }
 
-function getHtmlFileName(sectionName){
+function getHtmlFileName(sectionName) {
 
     return sectionName.toLowerCase().replaceAll('.', ' ').replaceAll('(', ' ').replaceAll(')', '').replaceAll('&', ' ').replaceAll(',', ' ').replaceAll('+', ' ').replaceAll('-', ' ').replaceAll(/\s+/g, '_');
 }
 
-function getHtmlFileNameSubSection(sectionName, subSectionName){
+function getHtmlFileNameSubSection(sectionName, subSectionName) {
 
     return getHtmlFileName(sectionName) + '_' + getHtmlFileName(subSectionName);
 }
@@ -241,4 +241,45 @@ function getHtmlFileNameSubSection(sectionName, subSectionName){
 window.onload = function () {
 
     document.getElementById("nav").innerHTML = getNavigationHtml();
+
+    const styleElement = document.createElement('style');
+    styleElement.textContent = `
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        .split-container {
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+           
+        }
+        #nav {
+            width: 320px;
+            min-width: 320px; 
+            height: 100%;
+            overflow-y: auto;
+            padding-bottom: 2rem;
+        }
+        .content-container {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 1rem;
+        }
+    `;
+    document.head.appendChild(styleElement);
+
+    const mainContent = document.querySelector('.container');
+    const contentContainer = document.createElement('div');
+    contentContainer.className = 'content-container';
+    mainContent.parentNode.insertBefore(contentContainer, mainContent);
+    contentContainer.appendChild(mainContent);
+
+    const splitContainer = document.createElement('div');
+    splitContainer.className = 'split-container';
+    document.body.insertBefore(splitContainer, document.body.firstChild);
+    splitContainer.appendChild(document.getElementById('nav'));
+    splitContainer.appendChild(contentContainer);
 };
