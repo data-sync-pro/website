@@ -48,7 +48,10 @@ var catalog = JSON.parse(
             "Data List":[
                 "Executable Data List",
                 "Actionable Data List",
-                "Pipeline Data Lists"
+                "Pipeline Data Lists",
+                "Required Custom Permission to View",
+                "Edit Target Fields before Action",
+                "Required Custom Permission to Execute"
             ],
             "Batch Jobs": [
                 "Close Stagnant Cases",
