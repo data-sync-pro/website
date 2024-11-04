@@ -47,7 +47,7 @@ var catalog = JSON.parse(
             ],
             "Data List":[
                 "Executable Data List",
-                "Actionable Data List",
+                "Actionable Data List in User Context",
                 "Pipeline Data Lists",
                 "Required Custom Permission to View",
                 "Edit Target Fields before Action",
