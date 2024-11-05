@@ -27,6 +27,7 @@ var catalog = JSON.parse(
                     "OAuth2"
                 ],
                 "Trigger":[
+                    "Hook Trigger",
                     "Sharing Rule"
                 ]
             }
