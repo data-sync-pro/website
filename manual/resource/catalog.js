@@ -25,6 +25,9 @@ var catalog = JSON.parse(
                     "Is Current Org",
                     "Username & Password",
                     "OAuth2"
+                ],
+                "Trigger":[
+                    "Sharing Rule"
                 ]
             }
         ],

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="resource/salesforce-lightning-design-system.css">
+    <link rel="stylesheet" href="resource/dsp-manual.css">
+    <script src="resource/catalog.js"></script>
+</head>
+
+<body>
+    <div style="width: 100%; display:flex;">
+        <div id="nav" style="width:320px;"></div>
+
+        <div class="container" style="margin-bottom: 5rem;">
+
+            <h1>Trigger - Sharing Rule Setup</h1>
+            <div class='v-space'></div>
+
+            <p>Follow these steps to set up the sharing rule:</p>
+            <ul>
+                <li class="pli">In <strong>Sharing Settings</strong>, locate <strong>Executable Sharing Rule</strong>.
+                    <div class="image-outer">
+                        <img src="resource/img/trigger_sharing_rule1.png" onclick="window.open(this.src)" alt="Trigger Sharing Rule Image" />
+                        <div class="image-title">Post-Installation Sharing Rule</div>
+                    </div>
+                </li>
+                <li class="pli">Set <strong>Rule Type</strong> to <strong>Based on Criteria</strong>.</li>
+                <li class="pli">Define the criteria as follows:
+                    <ul>
+                        <li class="sli"><strong>Field:</strong> Select <strong>All Internal Users Have Read Access?</strong></li>
+                        <li class="sli"><strong>Operator:</strong> Choose <strong>equals</strong></li>
+                        <li class="sli"><strong>Value:</strong> Set to <strong>True</strong></li>
+                    </ul>
+                </li>
+                <li class="pli">Under <strong>Share With</strong>, select <strong>Public Groups</strong> and choose <strong>All Internal Users</strong>.
+                    <div class="image-outer">
+                        <img src="resource/img/trigger_sharing_rule2.png" onclick="window.open(this.src)" alt="Trigger Sharing Rule Image" />
+                        <div class="image-title">Post-Installation Sharing Rule</div>
+                    </div>
+                </li>
+            </ul>
+           
+
+        </div>
+    </div>
+</body>
+
+</html>
