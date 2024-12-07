@@ -55,7 +55,8 @@ var catalog = JSON.parse(
                 "Pipeline Data Lists",
                 "Required Custom Permission to View",
                 "Edit Target Fields before Action",
-                "Required Custom Permission to Execute"
+                "Required Custom Permission to Execute"，
+                "Toggle SOQL Manager"
             ],
             "Batch Jobs": [
                 "Close Stagnant Cases",
