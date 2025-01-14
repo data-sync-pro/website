@@ -62,7 +62,8 @@ var catalog = JSON.parse(
                 "Close Stagnant Cases",
                 "Create Tasks for Escalated Cases",
                 "Delete Obsolete Cases",
-                "Restore Deleted Cases"
+                "Restore Deleted Cases",
+                "Aggregate Large Data Volumes"
             ],
             "Record-Based Configurations": ["Deploy DSP Configurations"],
             "Sandbox Management": ["Seed Relational Data"]
