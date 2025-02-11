@@ -65,6 +65,9 @@ var catalog = JSON.parse(
                 "Restore Deleted Cases",
                 "Aggregate Large Data Volumes"
             ],
+            "Triggers": [
+                "Self-Adaptive Trigger for Aggregations"
+            ],
             "Record-Based Configurations": ["Deploy DSP Configurations"],
             "Sandbox Management": ["Seed Relational Data"]
         }]
