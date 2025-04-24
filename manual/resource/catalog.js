@@ -35,8 +35,6 @@ var catalog = JSON.parse(
         ],
 
         "Transformation": [
-          "Elements of Mapping",
-          "Calculate Field Values"
         ],
 
         "Recipes": [{
