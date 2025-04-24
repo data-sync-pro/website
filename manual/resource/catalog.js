@@ -5,9 +5,9 @@ var catalog = JSON.parse(
           {
             "Auth. & Security": [],
             "Data Model": [
+              "Objects & Relationships",
               "Directional Executable",
-              "Single Connection Executable",
-              "CPQ Object Relationship"
+              "Single Connection Executable"              
             ],
             "Process Flow": [
               "Insert",
