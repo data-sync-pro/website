@@ -6,7 +6,8 @@ var catalog = JSON.parse(
             "Auth. & Security": [],
             "Data Model": [
               "Directional Executable",
-              "Single Connection Executable"
+              "Single Connection Executable",
+              "CPQ Object Relationship"
             ],
             "Process Flow": [
               "Insert",
