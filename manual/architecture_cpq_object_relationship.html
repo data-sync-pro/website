@@ -1,191 +1,121 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <link rel="stylesheet" href="resource/salesforce-lightning-design-system.css">
-    <link rel="stylesheet" href="resource/dsp-manual.css">
+  <head>
+    <link rel="stylesheet" href="resource/salesforce-lightning-design-system.css" />
+    <link rel="stylesheet" href="resource/dsp-manual.css" />
     <script src="resource/catalog.js"></script>
-</head>
+  </head>
 
-<body>
-    <div style="width: 100%; display:flex;">
-        <div id="nav" class="" style="width:320px; ">
-        </div>
+  <body>
+    <div style="width:100%;display:flex">
+      <div id="nav" style="width:320px"></div>
 
-        <div style="" class="container">
+      <div class="container" style="flex:1">
+        <div class="v-space"></div>
+        <section id="dsp_object_overview">
+          <h2>DSP Object Overview</h2>
+          <p>This table lists each core DSP object with its API name and parent relationships.</p>
 
-            <div class="v-space"></div>
-            <div id="dsp_object_definitions">
-              <h2>DSP Object Definitions</h2>
-              <p>
-                The table below lists the core DSP configuration and log objects, showing each
-                object’s API name, its parent relationships, and a concise description.
-              </p>
-            
-              <table>
-                <thead>
-                  <tr>
-                    <th class="table-column-name">Name</th>
-                    <th>API&nbsp;Name</th>
-                    <th>Parent&nbsp;Relationships</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Connection</td>
-                    <td>pushtopics__Connection__c</td>
-                    <td>None</td>
-                    <td>
-                      A Connection represents a connected Salesforce org and specifies the
-                      authentication required to establish the connection.
-                    </td>
-                  </tr>
-            
-                  <tr>
-                    <td>Direction</td>
-                    <td>pushtopics__Direction__c</td>
-                    <td>Connection</td>
-                    <td>
-                      A Direction defines the source and target Connections used by
-                      Executables, serving as a reusable configuration for where data is
-                      retrieved and where actions are applied.
-                    </td>
-                  </tr>
-            
-                  <tr>
-                    <td>Pipeline</td>
-                    <td>pushtopics__Pipeline__c</td>
-                    <td>Direction</td>
-                    <td>
-                      <p>
-                        A Pipeline groups and organizes related Executables—either for
-                        contextual organization or for defining a specific execution or
-                        display sequence.
-                      </p>
-                      <p>
-                        It enables ordered execution of Batch jobs and Triggers, and ordered
-                        display of Data Lists and Action Buttons.
-                      </p>
-                      <p>
-                        A Pipeline also supports shared configurations such as Retrieve
-                        Criteria and Scope Filter, and provides access to the Migration
-                        Builder for creating structured data-migration Executables across
-                        Connections, and more.
-                      </p>
-                    </td>
-                  </tr>
-            
-                  <tr>
-                    <td>Executable</td>
-                    <td>pushtopics__Executable__c</td>
-                    <td>Direction,&nbsp;Connection,&nbsp;Pipeline</td>
-                    <td>
-                      <p>
-                        An Executable is the core configuration unit of DSP’s rules engines.
-                        It defines the logic for processing, transforming, and acting on
-                        Salesforce data—and powers all five engines: Batch, Triggers, Data
-                        List, Action Button, and Data Loader.
-                      </p>
-                      <p>
-                        Executables can be associated with either a Direction or a
-                        Connection. When linked to a Direction, the Executable specifies the
-                        source and target objects, along with the processing logic between
-                        them. When linked to a Connection, it supports defining an action on
-                        a target object using input from a specified data profile, or
-                        creating a single data list based on a query.
-                      </p>
-                      <p>
-                        Executables provide a modular, declarative, and simplified yet
-                        powerful configuration model for managing complex operations within
-                        Salesforce.
-                      </p>
-                    </td>
-                  </tr>
-            
-                  <tr>
-                    <td>Field&nbsp;Mapping</td>
-                    <td>pushtopics__FieldMapping__c</td>
-                    <td>Executable</td>
-                    <td>
-                      A Field Mapping associated with an Executable defines the
-                      transformation logic for individual target fields. It leverages source
-                      fields, expressions, and a list of predefined functions to shape the
-                      data transformation.
-                    </td>
-                  </tr>
-            
-                  <tr>
-                    <td>Variable</td>
-                    <td>pushtopics__Variable__c</td>
-                    <td>Connection,&nbsp;Executable</td>
-                    <td>
-                      A Variable is a named, reusable formula that can be referenced in
-                      mappings, filters, or other expressions across one or more
-                      Executables.
-                    </td>
-                  </tr>
-            
-                  <tr>
-                    <td>Schedule</td>
-                    <td>pushtopics__Schedule__c</td>
-                    <td>Executable,&nbsp;Pipeline</td>
-                    <td>
-                      A Schedule specifies the frequency and timing for executing a job
-                      item—such as a Pipeline, Executable, or Apex class—at defined
-                      intervals.
-                    </td>
-                  </tr>
-            
-                  <tr>
-                    <td>Pipeline&nbsp;Execution</td>
-                    <td>pushtopics__PipelineExecution__c</td>
-                    <td>Pipeline</td>
-                    <td>
-                      A Pipeline Execution is a log record that tracks the batch execution
-                      of a Pipeline containing multiple Executables, capturing the overall
-                      status and outcome of the associated Executions.
-                    </td>
-                  </tr>
-            
-                  <tr>
-                    <td>Execution</td>
-                    <td>pushtopics__Execution__c</td>
-                    <td>Executable,&nbsp;Pipeline&nbsp;Execution</td>
-                    <td>
-                      An Execution is a log record that tracks the execution of a Batch
-                      Executable, capturing its status, timing, and key details.
-                    </td>
-                  </tr>
-            
-                  <tr>
-                    <td>Batch&nbsp;Execution</td>
-                    <td>pushtopics__BatchExecution__c</td>
-                    <td>Execution</td>
-                    <td>
-                      A Batch Execution is a log record representing the execution of a
-                      single batch chunk within an Execution. It captures the status, scope,
-                      outcome, resource usage, and other key details related to processing
-                      that specific subset of records.
-                    </td>
-                  </tr>
-            
-                  <tr>
-                    <td>Saved&nbsp;Query</td>
-                    <td>pushtopics__SavedQuery__c</td>
-                    <td>None</td>
-                    <td>
-                      A Saved Query stores a reusable, user-defined query—enabling easy
-                      access, editing, and execution from Query Manager&nbsp;(Q).
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            
-            
-        </div>
+          <table>
+            <thead>
+              <tr>
+                <th class="table-column-name">Name</th>
+                <th>API&nbsp;Name</th>
+                <th>Parent&nbsp;Relationships</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><a href="#desc-Connection">Connection</a></td>        <td>pushtopics__Connection__c</td>        <td>None</td></tr>
+              <tr><td><a href="#desc-Direction">Direction</a></td>          <td>pushtopics__Direction__c</td>         <td>Connection</td></tr>
+              <tr><td><a href="#desc-Pipeline">Pipeline</a></td>            <td>pushtopics__Pipeline__c</td>          <td>Direction</td></tr>
+              <tr><td><a href="#desc-Executable">Executable</a></td>        <td>pushtopics__Executable__c</td>        <td>Direction,&nbsp;Connection,&nbsp;Pipeline</td></tr>
+              <tr><td><a href="#desc-FieldMapping">Field&nbsp;Mapping</a></td><td>pushtopics__FieldMapping__c</td>      <td>Executable</td></tr>
+              <tr><td><a href="#desc-Variable">Variable</a></td>            <td>pushtopics__Variable__c</td>          <td>Connection,&nbsp;Executable</td></tr>
+              <tr><td><a href="#desc-Schedule">Schedule</a></td>            <td>pushtopics__Schedule__c</td>          <td>Executable,&nbsp;Pipeline</td></tr>
+              <tr><td><a href="#desc-PipelineExecution">Pipeline&nbsp;Execution</a></td><td>pushtopics__PipelineExecution__c</td><td>Pipeline</td></tr>
+              <tr><td><a href="#desc-Execution">Execution</a></td>          <td>pushtopics__Execution__c</td>         <td>Executable,&nbsp;Pipeline&nbsp;Execution</td></tr>
+              <tr><td><a href="#desc-BatchExecution">Batch&nbsp;Execution</a></td><td>pushtopics__BatchExecution__c</td>  <td>Execution</td></tr>
+              <tr><td><a href="#desc-SavedQuery">Saved&nbsp;Query</a></td>  <td>pushtopics__SavedQuery__c</td>         <td>None</td></tr>
+            </tbody>
+          </table>
+        </section>
+        <div class="v-space"></div>
+        <section id="dsp_object_descriptions">
+          <h2>DSP Object Descriptions</h2>
+          <p>This table focuses on what each object does inside DSP.</p>
+
+          <table>
+            <thead>
+              <tr>
+                <th class="table-column-name">Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr id="desc-Connection">
+                <td>Connection</td>
+                <td>A Connection represents a connected Salesforce org and specifies the authentication required to establish the connection.</td>
+              </tr>
+
+              <tr id="desc-Direction">
+                <td>Direction</td>
+                <td>A Direction defines the source and target Connections used by Executables, serving as a reusable configuration for where data is retrieved and where actions are applied.</td>
+              </tr>
+
+              <tr id="desc-Pipeline">
+                <td>Pipeline</td>
+                <td>
+                  A Pipeline groups and organizes related Executables—either for contextual organization or for defining a specific execution or display sequence. It enables ordered execution of Batch jobs and Triggers, and ordered display of Data Lists and Action Buttons. A Pipeline also supports shared configurations such as Retrieve Criteria and Scope Filter, and provides access to the Migration Builder for creating structured data-migration Executables across Connections, and more.
+                </td>
+              </tr>
+
+              <tr id="desc-Executable">
+                <td>Executable</td>
+                <td>
+                  An Executable is the core configuration unit of DSP’s rules engines. It defines the logic for processing, transforming, and acting on Salesforce data—and powers Batch, Triggers, Data List, Action Button, and Data Loader engines. Depending on whether it’s linked to a Direction or Connection, it can move data between objects, apply actions, or generate data lists.
+                </td>
+              </tr>
+
+              <tr id="desc-FieldMapping">
+                <td>Field&nbsp;Mapping</td>
+                <td>A Field Mapping associated with an Executable defines the transformation logic for individual target fields. It leverages source fields, expressions, and predefined functions to shape data.</td>
+              </tr>
+
+              <tr id="desc-Variable">
+                <td>Variable</td>
+                <td>A Variable is a named, reusable formula that can be referenced in mappings, filters, or other expressions across one or more Executables.</td>
+              </tr>
+
+              <tr id="desc-Schedule">
+                <td>Schedule</td>
+                <td>A Schedule specifies the frequency and timing for executing a job item—such as a Pipeline, Executable, or Apex class—at defined intervals.</td>
+              </tr>
+
+              <tr id="desc-PipelineExecution">
+                <td>Pipeline&nbsp;Execution</td>
+                <td>A Pipeline Execution is a log record that tracks the batch execution of a Pipeline containing multiple Executables, capturing the overall status and outcome of those Executions.</td>
+              </tr>
+
+              <tr id="desc-Execution">
+                <td>Execution</td>
+                <td>An Execution is a log record that tracks a single run of a Batch Executable, recording its status, timing, and key metrics.</td>
+              </tr>
+
+              <tr id="desc-BatchExecution">
+                <td>Batch&nbsp;Execution</td>
+                <td>A Batch Execution represents one chunk within an Execution. It captures status, scope, outcome, resource usage, and metrics for that subset of records.</td>
+              </tr>
+
+              <tr id="desc-SavedQuery">
+                <td>Saved&nbsp;Query</td>
+                <td>A Saved Query stores a reusable, user-defined query—enabling quick access, editing, and execution from Query Manager (Q).</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <div class="v-space" style="height:2rem"></div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
