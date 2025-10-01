@@ -877,7 +877,7 @@
       "pushtopics__ApplicableForSelfAdaptiveTriggers__c": false,
       "pushtopics__ApplicableForTriggerActions__c": true,
       "pushtopics__ApplyDuplicateMatching__c": false,
-      "pushtopics__AutoRetryFailedBatches__c": false,
+      "pushtopics__AutoRetryFailedBatches__c": true,
       "pushtopics__AvailableInSelfAdaptiveTriggers__c": false,
       "pushtopics__AvailableInTriggerActions__c": false,
       "pushtopics__AvailableInTriggers__c": false,
