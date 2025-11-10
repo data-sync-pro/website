@@ -1549,21 +1549,6 @@
       "pushtopics__UseSalesforceUpsertAPI__c": false,
       "pushtopics__FieldMappings__r": [
         {
-          "Name": "pushtopics__Description__c",
-          "pushtopics__Createable__c": true,
-          "pushtopics__Deployable__c": false,
-          "pushtopics__ExternalId__c": false,
-          "pushtopics__IsDefaultMappingField__c": true,
-          "pushtopics__IsHeader__c": false,
-          "pushtopics__IsTargetMatchingField__c": false,
-          "pushtopics__Label__c": "Description",
-          "pushtopics__Length__c": 32768,
-          "pushtopics__Mapping__c": "pushtopics__Description__c",
-          "pushtopics__Nillable__c": true,
-          "pushtopics__Type__c": "textarea",
-          "pushtopics__Updateable__c": true
-        },
-        {
           "Name": "pushtopics__HasDeployableChildRecords__c",
           "pushtopics__Createable__c": true,
           "pushtopics__Deployable__c": false,
@@ -1659,6 +1644,21 @@
           "pushtopics__Mapping__c": "Name",
           "pushtopics__Nillable__c": true,
           "pushtopics__Type__c": "string",
+          "pushtopics__Updateable__c": true
+        },
+        {
+          "Name": "pushtopics__Description__c",
+          "pushtopics__Createable__c": true,
+          "pushtopics__Deployable__c": false,
+          "pushtopics__ExternalId__c": false,
+          "pushtopics__IsDefaultMappingField__c": true,
+          "pushtopics__IsHeader__c": false,
+          "pushtopics__IsTargetMatchingField__c": false,
+          "pushtopics__Label__c": "Description",
+          "pushtopics__Length__c": 32768,
+          "pushtopics__Mapping__c": "pushtopics__Description__c",
+          "pushtopics__Nillable__c": true,
+          "pushtopics__Type__c": "textarea",
           "pushtopics__Updateable__c": true
         }
       ]
@@ -2044,21 +2044,6 @@
           "pushtopics__Label__c": "Additional Retrieve Criteria",
           "pushtopics__Length__c": 2500,
           "pushtopics__Mapping__c": "pushtopics__AdditionalRetrieveCriteria__c",
-          "pushtopics__Nillable__c": true,
-          "pushtopics__Type__c": "textarea",
-          "pushtopics__Updateable__c": true
-        },
-        {
-          "Name": "pushtopics__AdditionalScopeFilter__c",
-          "pushtopics__Createable__c": true,
-          "pushtopics__Deployable__c": false,
-          "pushtopics__ExternalId__c": false,
-          "pushtopics__IsDefaultMappingField__c": true,
-          "pushtopics__IsHeader__c": false,
-          "pushtopics__IsTargetMatchingField__c": false,
-          "pushtopics__Label__c": "Additional Scope Filter",
-          "pushtopics__Length__c": 2400,
-          "pushtopics__Mapping__c": "pushtopics__AdditionalScopeFilter__c",
           "pushtopics__Nillable__c": true,
           "pushtopics__Type__c": "textarea",
           "pushtopics__Updateable__c": true
@@ -2666,21 +2651,6 @@
           "pushtopics__Updateable__c": true
         },
         {
-          "Name": "pushtopics__QRequiredCustomPermissionsToView__c",
-          "pushtopics__Createable__c": true,
-          "pushtopics__Deployable__c": false,
-          "pushtopics__ExternalId__c": false,
-          "pushtopics__IsDefaultMappingField__c": true,
-          "pushtopics__IsHeader__c": false,
-          "pushtopics__IsTargetMatchingField__c": false,
-          "pushtopics__Label__c": "Q: Required Custom Permissions to View",
-          "pushtopics__Length__c": 255,
-          "pushtopics__Mapping__c": "pushtopics__QRequiredCustomPermissionsToView__c",
-          "pushtopics__Nillable__c": true,
-          "pushtopics__Type__c": "string",
-          "pushtopics__Updateable__c": true
-        },
-        {
           "Name": "pushtopics__QShowColumnFilter__c",
           "pushtopics__Createable__c": true,
           "pushtopics__Deployable__c": false,
@@ -3053,21 +3023,6 @@
           "pushtopics__Mapping__c": "pushtopics__RelaxFieldMappingsTypeCheck__c",
           "pushtopics__Nillable__c": false,
           "pushtopics__Type__c": "boolean",
-          "pushtopics__Updateable__c": true
-        },
-        {
-          "Name": "pushtopics__RequiredCustomPermissionsToExecute__c",
-          "pushtopics__Createable__c": true,
-          "pushtopics__Deployable__c": false,
-          "pushtopics__ExternalId__c": false,
-          "pushtopics__IsDefaultMappingField__c": true,
-          "pushtopics__IsHeader__c": false,
-          "pushtopics__IsTargetMatchingField__c": false,
-          "pushtopics__Label__c": "Required Custom Permissions to Execute",
-          "pushtopics__Length__c": 255,
-          "pushtopics__Mapping__c": "pushtopics__RequiredCustomPermissionsToExecute__c",
-          "pushtopics__Nillable__c": true,
-          "pushtopics__Type__c": "string",
           "pushtopics__Updateable__c": true
         },
         {
@@ -4060,21 +4015,6 @@
           "pushtopics__Updateable__c": true
         },
         {
-          "Name": "pushtopics__EditTargetFieldsBeforeAction__c",
-          "pushtopics__Createable__c": true,
-          "pushtopics__Deployable__c": false,
-          "pushtopics__ExternalId__c": false,
-          "pushtopics__IsDefaultMappingField__c": true,
-          "pushtopics__IsHeader__c": false,
-          "pushtopics__IsTargetMatchingField__c": false,
-          "pushtopics__Label__c": "Edit Target Fields Before Action",
-          "pushtopics__Length__c": 1000,
-          "pushtopics__Mapping__c": "pushtopics__EditTargetFieldsBeforeAction__c",
-          "pushtopics__Nillable__c": true,
-          "pushtopics__Type__c": "textarea",
-          "pushtopics__Updateable__c": true
-        },
-        {
           "Name": "pushtopics__FailureMessage__c",
           "pushtopics__Createable__c": true,
           "pushtopics__Deployable__c": false,
@@ -4222,21 +4162,6 @@
           "pushtopics__Mapping__c": "pushtopics__MatchedRecordsSortingComponents__c",
           "pushtopics__Nillable__c": true,
           "pushtopics__Type__c": "textarea",
-          "pushtopics__Updateable__c": true
-        },
-        {
-          "Name": "pushtopics__MergeTriggerActions__c",
-          "pushtopics__Createable__c": true,
-          "pushtopics__Deployable__c": false,
-          "pushtopics__ExternalId__c": false,
-          "pushtopics__IsDefaultMappingField__c": true,
-          "pushtopics__IsHeader__c": false,
-          "pushtopics__IsTargetMatchingField__c": false,
-          "pushtopics__Label__c": "Merge Trigger Actions?",
-          "pushtopics__Length__c": 0,
-          "pushtopics__Mapping__c": "pushtopics__MergeTriggerActions__c",
-          "pushtopics__Nillable__c": false,
-          "pushtopics__Type__c": "boolean",
           "pushtopics__Updateable__c": true
         },
         {
@@ -4390,21 +4315,6 @@
           "pushtopics__Updateable__c": true
         },
         {
-          "Name": "pushtopics__QOpenLinksInRecordPageDataList__c",
-          "pushtopics__Createable__c": true,
-          "pushtopics__Deployable__c": false,
-          "pushtopics__ExternalId__c": false,
-          "pushtopics__IsDefaultMappingField__c": true,
-          "pushtopics__IsHeader__c": false,
-          "pushtopics__IsTargetMatchingField__c": false,
-          "pushtopics__Label__c": "Q: Open Links in Record Page(Data List)?",
-          "pushtopics__Length__c": 0,
-          "pushtopics__Mapping__c": "pushtopics__QOpenLinksInRecordPageDataList__c",
-          "pushtopics__Nillable__c": false,
-          "pushtopics__Type__c": "boolean",
-          "pushtopics__Updateable__c": true
-        },
-        {
           "Name": "pushtopics__FillMissingFieldsOnMerge__c",
           "pushtopics__Createable__c": true,
           "pushtopics__Deployable__c": false,
@@ -4475,21 +4385,6 @@
           "pushtopics__Label__c": "# Action Button",
           "pushtopics__Length__c": 0,
           "pushtopics__Mapping__c": "pushtopics__ActionButton__c",
-          "pushtopics__Nillable__c": false,
-          "pushtopics__Type__c": "boolean",
-          "pushtopics__Updateable__c": true
-        },
-        {
-          "Name": "pushtopics__ActionInFutureMethodInTriggers__c",
-          "pushtopics__Createable__c": true,
-          "pushtopics__Deployable__c": false,
-          "pushtopics__ExternalId__c": false,
-          "pushtopics__IsDefaultMappingField__c": true,
-          "pushtopics__IsHeader__c": false,
-          "pushtopics__IsTargetMatchingField__c": false,
-          "pushtopics__Label__c": "Action in Future Method in Triggers?",
-          "pushtopics__Length__c": 0,
-          "pushtopics__Mapping__c": "pushtopics__ActionInFutureMethodInTriggers__c",
           "pushtopics__Nillable__c": false,
           "pushtopics__Type__c": "boolean",
           "pushtopics__Updateable__c": true
@@ -4585,21 +4480,6 @@
           "pushtopics__Updateable__c": true
         },
         {
-          "Name": "pushtopics__OnlyTransformIfMappedSourceChanges__c",
-          "pushtopics__Createable__c": true,
-          "pushtopics__Deployable__c": false,
-          "pushtopics__ExternalId__c": false,
-          "pushtopics__IsDefaultMappingField__c": true,
-          "pushtopics__IsHeader__c": false,
-          "pushtopics__IsTargetMatchingField__c": false,
-          "pushtopics__Label__c": "Only Transform if Mapped Source Changes?",
-          "pushtopics__Length__c": 0,
-          "pushtopics__Mapping__c": "pushtopics__OnlyTransformIfMappedSourceChanges__c",
-          "pushtopics__Nillable__c": false,
-          "pushtopics__Type__c": "boolean",
-          "pushtopics__Updateable__c": true
-        },
-        {
           "Name": "pushtopics__PreActionEditFields__c",
           "pushtopics__Createable__c": true,
           "pushtopics__Deployable__c": false,
@@ -4640,21 +4520,6 @@
           "pushtopics__Label__c": "Pre-Action: View Fields",
           "pushtopics__Length__c": 1000,
           "pushtopics__Mapping__c": "pushtopics__PreActionViewFields__c",
-          "pushtopics__Nillable__c": true,
-          "pushtopics__Type__c": "textarea",
-          "pushtopics__Updateable__c": true
-        },
-        {
-          "Name": "pushtopics__QHelperText__c",
-          "pushtopics__Createable__c": true,
-          "pushtopics__Deployable__c": false,
-          "pushtopics__ExternalId__c": false,
-          "pushtopics__IsDefaultMappingField__c": true,
-          "pushtopics__IsHeader__c": false,
-          "pushtopics__IsTargetMatchingField__c": false,
-          "pushtopics__Label__c": "Q: Helper Text",
-          "pushtopics__Length__c": 500,
-          "pushtopics__Mapping__c": "pushtopics__QHelperText__c",
           "pushtopics__Nillable__c": true,
           "pushtopics__Type__c": "textarea",
           "pushtopics__Updateable__c": true
