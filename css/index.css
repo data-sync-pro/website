@@ -692,8 +692,8 @@ abbr, acronym, img {
 .template-dropdown .dropdown-menu {
   margin-top: 0.35rem;
   margin-left: 0.3rem;
-  width: auto;
-  min-width: max-content;
+  width: auto !important;
+  min-width: max-content !important;
   right: 0;
   padding: 0;
 }
