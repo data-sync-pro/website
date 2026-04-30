@@ -685,4 +685,22 @@ abbr, acronym, img {
   .page-box3 ul li {
     width: 100%; } }
 
-/*# sourceMappingURL=index.css.map */
+/* Template dropdown - hover to open */
+.template-dropdown:hover .dropdown-menu {
+  display: block;
+}
+.template-dropdown .dropdown-menu {
+  margin-top: 0.35rem;
+  margin-left: 0.3rem;
+  min-width: auto;
+  right: 0;
+  padding: 0;
+}
+.template-dropdown .dropdown-item {
+  padding: 0.3rem 0.75rem;
+}
+.template-dropdown .dropdown-item:hover {
+  background-color: #418696a2;
+  color: #fff;
+}
+
